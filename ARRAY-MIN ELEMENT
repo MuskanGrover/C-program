@@ -1,0 +1,24 @@
+//Display the minimum element of a 1-D array.
+#include<stdio.h>
+int main()
+{
+	int n;
+	printf("ENTER THE VALUE OF N : ");
+	scanf("%d",&n);
+	int arr[n];
+	printf("ENTER VALUES OF ARRAY ");
+	for(int i=0;i<n;i++)
+	{
+		scanf("%d",&arr[i]);
+	}
+	int min=arr[0];
+	for(int i=1;i<n;i++)
+	{
+		if(arr[i]<min)
+		{
+			min=arr[i];
+			
+		}
+	}
+	printf("\n THE MIN VALUE IS %d",min);
+}
