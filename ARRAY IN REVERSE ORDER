@@ -1,0 +1,18 @@
+#include<stdio.h>
+int main()
+{
+	//DECLARING AND INITIALIZING AT COMPILE TIME
+	int arr1[10]={10,16,10,9,10};
+	//AT RUN TIME
+	int arr2[10];
+	printf("ENTER ARRAY ELEMENTS: ");
+	for(int i=0;i<10;i++)
+	{
+		scanf("%d",&arr2[i]);
+	}
+	for(int i=9;i>=0;i--)
+	{
+	printf("%d\t",arr2[i]);
+	}
+	
+	
