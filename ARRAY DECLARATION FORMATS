@@ -1,0 +1,19 @@
+#include<stdio.h>
+int main()
+{
+	int arr[5];
+	printf("%d",sizeof(arr));
+	
+	
+	const int SIZE=10;
+	int arr1[SIZE];
+	printf("\n%d",sizeof(arr1));
+	
+	int size=10;
+	int arr2[size];
+	printf("\n%d",sizeof(arr2));
+	
+	
+	//int arr3[]; ERROR BECAUSE SIZE OF ARRAY IS NOT SPECIFIED
+}
+	
