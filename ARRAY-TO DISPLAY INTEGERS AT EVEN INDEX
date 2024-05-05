@@ -1,0 +1,21 @@
+#include<stdio.h>
+int main()
+{
+	int n;
+	printf("ENTER THE VALUE OF N:");
+	scanf("%d",&n);
+	int arr[n];
+	printf("\nENTER VALUES OF ARRAY:");
+	for(int i=0;i<n;i++)
+	{
+		scanf("%d",&arr[i]);
+	}
+	for(int i=0;i<n;i++)
+	{
+		if(i%2=0)
+		{
+			printf("THE ELEMENTS AT EVEN INDEX OF ARRAY ARE: %d\t",arr[i]);
+		}
+	}
+	return 0;
+}
