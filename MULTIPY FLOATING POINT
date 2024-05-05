@@ -1,0 +1,10 @@
+#include<stdio.h>
+int main()
+{
+	float a,b;
+	printf("ENTER NUMBERS:");
+	scanf("%f %f",&a,&b);
+	float mul=a*b;
+	printf("THE RESULT IS %f",mul);
+	return 0;
+}
