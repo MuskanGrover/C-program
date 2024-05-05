@@ -1,0 +1,22 @@
+//Display all the elements that end with digit 3, from a 1-D array of integers.
+#include<stdio.h>
+int main()
+{
+	int n;
+	printf("ENTER THE VALUE OF SIZE OF ARRAY: ");
+	scanf("%d",&n);
+	int arr[n];
+	printf("\nENTER VALUE OF ARRAY: ");
+	for(int i=0;i<n;i++)
+	{
+		scanf("%d",&arr[i]);
+	}
+	for(int i=0;i<n;i++)
+	{
+		if(arr[i]%10==3)
+		{
+			printf("%d \t",arr[i]);
+		}
+	}
+}
+	
