@@ -1,0 +1,27 @@
+//Accept an element from the user and display the number of times it occurs in a 1-D array of integers.
+#include<stdio.h>
+int main()
+{
+	int n;
+	printf("ENTER THE VALUE OF SIZE OF ARRAY: ");
+	scanf("%d",&n);
+	int arr[n];
+	printf("\nENTER VALUE OF ARRAY: ");
+	for(int i=0;i<n;i++)
+	{
+		scanf("%d",&arr[i]);
+	}
+	int element;
+	printf("THE ELEMENT WHOOSE OCCURENCE IS TO BE CALCULATED: ");
+	scanf("%d",&element);
+	int count=0;
+	int i;
+	for( i=0;i<n;i++)
+	{
+		if(arr[i]==element)
+		{
+			count++;
+		}
+	}
+	printf("\nTHE OCCURENCE IS: %d",count);
+}
