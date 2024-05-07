@@ -1,0 +1,25 @@
+/*Illustrate the use of the following five  functions of string.h header file: 
+a) strlen() 
+b) strcpy() 
+c) strrev() 
+d) strupr() 
+e) strlwr()*/
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+	char name[10]="MUSKAN";
+	printf("%d",strlen(name));
+	char name2[10]="GROVER";
+	strcpy(name2,name);//1ST PARAMETER WILL BE ONE IN WHICH STRING IS TO BE COPIED
+	printf("\n%s",name2);
+	strrev(name);
+	printf("\n%s",name);
+	strupr(name2);
+	printf("\n%s",name2);
+	strlwr(name2);
+	printf("\n%s",name2);
+	
+}
+
+
