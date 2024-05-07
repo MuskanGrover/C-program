@@ -10,8 +10,8 @@ int main() {
     int i,j;
     int rs=sizeof(arr)/sizeof (arr[0]);
     printf("\nGENERALISED WAY TO CALCULATE ROW SIZE: %d",rs);
-	int cs=sizeof(arr)/sizeof (arr[i][0]);
-    printf("\nGENERALISED WAY TO CALCULATE COLUMN SIZE%d",rs);
+	int cs=sizeof(arr[i])/sizeof (arr[i][0]);
+    printf("\nGENERALISED WAY TO CALCULATE COLUMN SIZE%d",cs);
     
     
 
