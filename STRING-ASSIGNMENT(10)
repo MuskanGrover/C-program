@@ -1,0 +1,14 @@
+//Displaying the string character by  character in reverse using a for loop and  strlen() function.
+#include<stdio.h>
+#include<string.h>
+
+int main()
+{
+	char arr[20]="MUSKAN GROVER";
+	for(int i=strlen(arr)-1;i>=0;i--)
+	{
+		printf("\n%c",arr[i]);
+	}
+	
+
+}
