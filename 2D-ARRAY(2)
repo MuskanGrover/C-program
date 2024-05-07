@@ -1,0 +1,20 @@
+/*Program to illustrate the working of 2-D array. The array is declared and initialized in one
+statement using separate array-initialization list for each row, at compile-time. Display the
+array.*/
+#include<stdio.h>
+int main()
+{
+	int arr[2][3];
+	arr[0][0]=12;
+	arr[0][1]=13;
+	arr[0][2]=14;
+	arr[1][0]=15;
+	arr[1][1]=16;
+	arr[1][2]=12;
+	printf("%d",arr[0][0]);
+	printf("\n%d",arr[0][1]);
+	printf("\n%d",arr[0][2]);
+	printf("\n%d",arr[1][0]);
+	printf("\n%d",arr[1][1]);
+	printf("\n%d",arr[1][2]);
+}
