@@ -1,0 +1,13 @@
+//Declare and initialize a character variable,  an unsized character array and a sized  character array.  
+//Show the working of sizeof and strlen()  with the character arrays.
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+	char name[7]="MUSKAN";
+	puts(name);
+	printf("THE SIZE IS: %d",sizeof(name));//SIZE OF WILL DISPLAY SIZE INCLUDING NULL CHARACTER
+	int count=strlen(name);//STRLEN WILL DISPLAY SIZE EXCLUDING END OF LINE CHARACTER 
+	printf("\n %d",count);
+	
+}
