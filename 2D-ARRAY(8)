@@ -1,0 +1,39 @@
+//Display the right  diagonal elements of a 2 D Array of integers.
+#include <stdio.h>
+
+int main() {
+    int m, n;
+    printf("ENTER THE ROW SIZE FOR MATRIX 1: ");
+    scanf("%d", &m);
+    printf("ENTER THE COLUMN SIZE FOR MATRIX 1: ");
+    scanf("%d", &n);
+
+    int arr[m][n];
+    printf("ENTER THE ELEMENTS OF MATRIX 1: ");
+    for (int i = 0; i < m; i++) 
+	{
+        for (int j = 0; j < n; j++) 
+		{
+            scanf("%d", &arr[i][j]);
+        }
+    }
+    for (int i = 0; i < m; i++)
+	 {
+        for (int j = 0; j < n; j++) 
+		{
+            printf("\nTHE ARRAY ELEMENTS ARE: %d", arr[i][j]);
+        }
+    }
+    
+	for(int i=0;i<m;i++)
+	{
+		for(int j=0;j<n;j++)
+		{
+		   if((i+j)==m-1)
+		   {
+    	     printf("\n\nTHE RIGHT  DIAGONAL ELEMENTS ARE: %d",arr[i][j]);
+	     	}
+		}
+	}
+     return 0;
+}
