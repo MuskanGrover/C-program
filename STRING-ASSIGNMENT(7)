@@ -1,0 +1,14 @@
+//Displaying the string character by  character using a for loop and strlen() function.[lower bound 0 to strlen(string)- 1]
+#include<stdio.h>
+#include<string.h>
+
+int main()
+{
+	char arr[20]="MUSKAN GROVER";
+	for(int i=0;i<=strlen(arr)-1;i++)
+	{
+		printf("\n%c",arr[i]);
+	}
+	
+
+}
