@@ -1,0 +1,43 @@
+//Program to find user entered value in the matrix 
+#include <stdio.h>
+
+int main() {
+    int arr[3][4] = {
+        {7, 8, 6},
+        {2, 7, 3},
+        {2,3,4},
+    };
+    int i,j;
+    int rs=sizeof(arr)/sizeof (arr[0]);
+    printf("\nGENERALISED WAY TO CALCULATE ROW SIZE: %d",rs);
+	int cs=sizeof(arr[i])/sizeof (arr[i][0]);
+    printf("\nGENERALISED WAY TO CALCULATE COLUMN SIZE: %d",cs);
+    printf("\n");
+	int flag=0;
+    int val,rowin,colin;
+    printf("\nENTER THE VALUE WHOOSE INDEX IS TO BE FOUND: ");
+    scanf("%d",&val);
+    for(i=0;i<rs;i++)
+    {
+    	for(j=0;j<cs;j++)
+    	{
+    		if(arr[i][j]==val)
+    		{
+    			 flag=1;
+    			 rowin=i;
+    			 colin=j;
+    			 break;
+			}
+			
+		}
+		if(flag)
+		{
+			break;
+		}
+	}
+	if(flag)
+	printf("THE INDEX OF VALUE IS %d and %d",rowin,colin);
+	else
+	printf("SORRY THE VALUE IS NOT PRESENT IN THE MATRIX ");
+	
+}
