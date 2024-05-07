@@ -1,0 +1,32 @@
+/*
+ Program to illustrate the working of 2-D array.
+ Array declared and initialized separately at compile(design time)
+ followed by displaying of elements.
+ Also display the size in bytes of the 2 D array.
+*/
+
+#include<stdio.h>
+int main()
+{
+int arr[2][3];//2-D array declared
+printf("\nSize in bytes of 2D array arr = %d",sizeof(arr));
+//assigning values element by element
+//Row 0
+arr[0][0]=10;
+arr[0][1]=11;
+arr[0][2]=12;
+//Row 1
+arr[1][0]=13;
+arr[1][1]=14;
+arr[1][2]=15;
+
+printf("\n Displaying the Array elements");
+printf("\narr[0][0]=%d",arr[0][0]);
+printf("\narr[0][1]=%d",arr[0][1]);
+printf("\narr[0][2]=%d",arr[0][2]);
+printf("\narr[1][0]=%d",arr[1][0]);
+printf("\narr[1][1]=%d",arr[1][1]);
+printf("\narr[1][2]=%d",arr[1][2]);
+return 0;
+}
+
