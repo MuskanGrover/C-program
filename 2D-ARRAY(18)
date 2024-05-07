@@ -1,0 +1,29 @@
+//Program to create a transpose  of a matrix
+#include <stdio.h>
+
+int main() {
+    int arr[3][4] = {
+        {7, 8, 6,5},
+        {2, 7, 3,8},
+        {4, 7, 9,0},
+    };
+    int i,j;
+    int rs=sizeof(arr)/sizeof (arr[0]);
+    printf("\nGENERALISED WAY TO CALCULATE ROW SIZE: %d",rs);
+	int cs=sizeof(arr[i])/sizeof (arr[i][0]);
+    printf("\nGENERALISED WAY TO CALCULATE COLUMN SIZE: %d",cs);
+    printf("\n");
+
+
+printf("THE TRANSPOSE MATRIX IS: ");
+
+    for(int i=0;i<cs;i++)
+    {
+    	for(int j=0;j<rs;j++)
+    	{
+    		
+    		printf("%d\t",arr[j][i]);
+		}
+		printf("\n");
+	}
+}
