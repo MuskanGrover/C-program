@@ -1,0 +1,11 @@
+//Illustrate the use of strcat() function of  string.h header file.
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+	char name[20]="MUSKAN";
+	char name2[10]="GROVER";
+	strcat(name," ");
+	strcat(name,name2);
+	printf("%s ",name);
+}
