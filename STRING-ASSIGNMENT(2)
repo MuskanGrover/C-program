@@ -1,0 +1,14 @@
+/ Accept and display a string at run-time  first using gets() and then using scanf()  function.  
+//Observe the difference in the way the two  functions store a string with and without  spaces.
+#include<stdio.h>
+int main()
+{
+	char name[20];
+	//printf("%s",name);
+	printf("\nENTER THE NAME: ");
+	scanf("%s",name);// WILL NOT TAKE CONTENT AFTER SPACES
+	printf("\nTHE NAME IS %s",name);
+	gets(name);
+	puts(name);//WILL PRINT EVEN AFTER SPACES UNTIL NEW LINE
+	
+}
