@@ -1,0 +1,21 @@
+//Illustrate the use of strcmp() function of  string.h header file.
+/*The strcmp() function returns an integer value:
+
+If the strings are equal, it returns 0.
+If the first string is lexicographically less than the second string, it returns a negative value.
+If the first string is lexicographically greater than the second string, it returns a positive value.*/
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+	char name[20]="MUSKAN";
+	char name2[10]="MUSKAN";
+	if(strcmp(name,name2)==0)
+	{
+		printf("THE STRINGS ARE EQUAL");
+	}
+	else
+	{
+		printf("THE STRING ARE NOT EQUAL");
+	}
+}
