@@ -1,0 +1,28 @@
+/*4. Program to illustrate the working of 2-D array. Array declared and initialized with values
+entered by the user at run-time, followed by displaying of elements.*/
+#include<stdio.h>
+int main()
+{
+	int m,n;
+	printf("ENTER THE ROW SIZE: ");
+	scanf("%d",&m);
+	printf("\nENTER THE COLUMN SIZE: ");
+	scanf("%d",&n);
+	int arr[m][n];
+	printf("\nENTER THE ARRAY ELEMENTS: ");
+	for(int i=0;i<m;i++)
+	{
+		for(int j=0;j<n;j++)
+		{
+			scanf("%d",&arr[i][j]);
+		}
+	}
+	for(int i=0;i<m;i++)
+	{
+		for(int j=0;j<n;j++)
+		{
+			printf("\n%d",arr[i][j]);
+		}
+	}
+	return 0;
+}
