@@ -1,0 +1,48 @@
+#include <stdio.h>
+
+int main() {
+    int m, n;
+    printf("ENTER THE ROW SIZE FOR MATRIX 1: ");
+    scanf("%d", &m);
+    printf("ENTER THE COLUMN SIZE FOR MATRIX 1: ");
+    scanf("%d", &n);
+
+    int arr[m][n];
+    printf("ENTER THE ELEMENTS OF MATRIX 1: ");
+    for (int i = 0; i < m; i++) {
+        for (int j = 0; j < n; j++) {
+            scanf("%d", &arr[i][j]);
+        }
+    }
+
+    int a, b;
+    printf("ENTER THE ROW SIZE FOR MATRIX 2: ");
+    scanf("%d", &a);
+    printf("ENTER THE COLUMN SIZE FOR MATRIX 2: ");
+    scanf("%d", &b);
+
+    if (m != a || n != b) {
+        printf("Matrices are not compatible for addition.\n");
+        return 0;
+    }
+
+    int arr1[a][b];
+    printf("ENTER THE ELEMENTS OF MATRIX 2: ");
+    for (int i = 0; i < a; i++) {
+        for (int j = 0; j < b; j++) {
+            scanf("%d", &arr1[i][j]);
+        }
+    }
+
+    printf("ADDITION OF MATRICES:\n");
+    int res[m][n];
+    for (int i = 0; i < m; i++) {
+        for (int j = 0; j < n; j++) {
+            res[i][j] = arr[i][j] + arr1[i][j];
+            printf("%d ", res[i][j]);
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
