@@ -1,0 +1,35 @@
+// Display the combined count of lowercase  and uppercase vowels in a string entered  by the user.
+// Use for loop to traverse and  switch case to compare.
+#include<stdio.h>
+#include<string.h>
+
+int main()
+{
+	char line[100];
+	int i;
+	int count=0;
+	
+	printf("\nEnter a line:");
+	gets(line);
+	fflush(stdin);
+	//NEW DELHI is the capital of India
+	for(i=0;line[i]!='\0';i++)
+	{
+	 switch(line[i])
+	 {
+	 case 'a':
+	 case 'e':
+	 case 'i':
+	 case 'o':
+	 case 'u':
+	 case 'A':
+	 case 'E':
+	 case 'I':
+	 case 'O':
+	 case 'U':
+	 count++;
+	 }//end of switch
+	}//end of for
+	printf("\nCount of lowercase and uppercase vowels = %d",count);
+return 0;
+}
