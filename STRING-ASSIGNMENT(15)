@@ -1,0 +1,33 @@
+ int main()
+ {
+ 	char check[20];
+ 	printf("ENTER ANY STRING: ");
+ 	gets(check);
+ 	int lc_count;
+ 	int uc_count;
+ 	int l_count;
+ 	int u_count;
+ 	for(int i=0;i<strlen(check)-1;i++)
+ 	{
+ 		if(check[i]>='A' && check[i]<='Z')
+ 		{
+ 			if(check[i]=='A' || check[i]=='E'||  check[i]=='I' || check[i]=='O' || check[i]=='U')
+ 	        	uc_count++;
+			else
+				u_count++;
+		}
+		else if(check[i]>='a' && check[i]<='z')
+ 		{
+ 			if(check[i]=='a' || check[i]=='e'||  check[i]=='i' || check[i]=='o' || check[i]=='u')
+ 	        	lc_count++;
+			else
+				l_count++;
+		}
+	}
+	printf("\nTHE UPPERCASE VOWELS ARE: %d",uc_count);
+	printf("\nTHE LOWERCASE VOWELS ARE: %d",lc_count);
+	printf("\nTHE UPPERCASE CONSONANTS ARE: %d",u_count);
+	printf("\nTHE LOWER CASE CONSONANTS ARE: %d",l_count);
+	
+	
+ }
