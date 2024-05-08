@@ -1,0 +1,15 @@
+// Print a string’s length without strlen()  function.
+#include<string.h>
+ int main()
+ {
+ 	char check[20];
+ 	printf("\nENTER THE STRING: ");
+ 	gets(check);
+ 	int count=0;
+ 	
+ 	for(int i=0;check[i]!='\0';i++)
+ 	{
+ 		count++;
+    }
+    printf("\n%d",count);
+ }
