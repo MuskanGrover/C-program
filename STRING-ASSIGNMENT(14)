@@ -1,0 +1,21 @@
+//Check and display if the string entered by 
+// the user is a palindrome or not.
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+	char name[25];
+	char old_name[25];
+	printf("\nENTER THE STRING TO BE CHECKED PALINDROME: ");
+	gets(name);
+	strcpy(old_name,name);
+	strrev(old_name);
+	if(strcmp(name,old_name)==0)
+	{
+		printf("PALINDROME");
+	}
+	else
+	{
+		printf("NOT PALINDROME");
+	}
+}
