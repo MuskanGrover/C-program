@@ -1,0 +1,30 @@
+//Display the count of lower case and  upper-case alphabets, digits, spaces, and  other characters in a string entered by the  user.
+#include<stdio.h>
+int main()
+{
+	char name[40]="MUSKAN GRover 1234 @#$ g";
+	int letcount=0;
+	int spacount=0;
+	int othercount=0;
+	for(int i=0;name[i]!='\0';i++)
+	{
+		if(name[i]>='A' &&  name[i]<='Z'  || name[i]>='a' && name[i]<'z')
+		{
+			letcount++;
+	
+		}
+		else if(name[i]==' ')
+		{
+			spacount++;
+		}
+		else
+		{
+			othercount++;
+		}
+	}
+	printf("\nTHE COUNT OF CHARACTERS : %d",letcount);
+	printf("\nTHE COUNT OF SPACES: %d",spacount);
+	printf("\nTHE COUNT OF OTHER CHARACTERS: %d",othercount);
+}
+
+
