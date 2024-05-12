@@ -1,0 +1,37 @@
+#include<stdio.h>
+ struct book
+ {
+ char name[20] ;
+ float price ;
+ int pages ;
+ } ;
+
+int main( )
+{
+ struct book b[3] ; //array of structure objects
+ int i ;//loop variable
+ //loop for taking inputs variable by variable
+ for(i=0 ;i<3 ;i++)
+ {
+	 printf("\nEnter details of b[%d] : ",i );
+	 printf ( "\nEnter Book name: " );
+	 gets(b[i].name);
+	 fflush(stdin);
+	 printf ( "\nEnter price: " ) ;
+	 scanf("%f",&b[i].price);
+	 fflush(stdin);
+	 printf ( "\nEnter pages: " ) ;
+	 scanf("%d", &b[i].pages ) ;
+	 fflush(stdin);
+ }
+
+ //loop for showing outputs variable by variable
+ for ( i = 0 ; i < 3 ; i++ )
+ {
+  printf("\n\nDetails of b[%d] : ",i );
+  printf ( "\nBook Name : %s\nBook Price : %.2f\nBook Pages : %d", b[i].name, b[i].price, b[i].pages ) ;
+ }
+ return 0;
+}
+ 
+ 
