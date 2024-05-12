@@ -1,0 +1,33 @@
+/*
+Assigning a structure variable to another structure variable in two ways.
+a) copying all elements in one go by assigning an already created structure 
+   variable to a new structure variable.
+   Remember: both the variables must be of the same structure type(tags must be same).
+b) piece-meal copying ,i.e. assigning members of an already created structure 
+   variable the corresponding members of a new structure variable.  
+*/
+#include<stdio.h>
+#include<string.h>
+struct emp{
+	char empname[20];
+	int empno;
+};
+struct emp s1,s2,s3;
+int main()
+{
+	//COPYING IN ONE GO
+	struct emp s1={"MUSKAN GROVER",12};
+	s2=s1;
+	printf("*********THE DETAILS OF S2**********");
+	printf("\nTHE NAME OF EMPLOYEE:%s ",s2.empname);
+	printf("\nTHE EMPLOYEE NUMBER OF E2:%d ",s2.empno);
+	
+	
+	//PIECE-MEAL COPYING
+	printf("\n*********THE DETAILS OF S3**********");
+	strcpy(s3.empname,s2.empname);
+	printf("\nTHE NAME OF EMPLOYEE:%s ",s3.empname);
+	s3.empno=s2.empno;
+	printf("\nTHE EMPLOYEE NUMBER OF E2:%d ",s3.empno);
+	
+}
