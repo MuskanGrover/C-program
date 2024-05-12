@@ -1,0 +1,17 @@
+/* Passing individual structure object to a function.*/
+#include<stdio.h>
+struct emp{
+	char name[20];
+	int age;
+};
+void display(struct emp e1);
+int main()
+{
+	struct emp e1={"MUSKAN GROVER",12};
+	display(e1);
+}
+void display(struct emp e1)
+{
+	printf("\nTHE NAME OF EMPLOYEE IS: %s",e1.name);
+	printf("\nTHE AGE OF EMPLOYEE IS: %d",e1.age);
+}
