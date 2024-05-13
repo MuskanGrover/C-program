@@ -1,0 +1,19 @@
+#include<stdio.h>
+int sum(int);
+int main()
+{
+	int no,a;
+    printf("enter value :");
+	scanf("%d",&no);
+	a=sum(no);
+	printf("\nsum of first n terms is:%d",a);
+	return 0;
+}
+int sum(int num)
+{
+	if(num!=0)
+	    return num + sum(num-1);
+	
+	else
+	     return num;  	
+}
