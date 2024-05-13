@@ -1,0 +1,22 @@
+/* Displaying structure object through a normal object and a pointer to the object
+*/
+#include<stdio.h>
+struct book
+ {
+ char name[25] ;
+ char author[25] ;
+ int callno ;
+ } ;
+
+int main( )
+{
+ struct book b = { "Let us C", "YPK", 101 };
+ struct book *b1 ;//pointer to book structure
+ printf("\nDisplaying struct book object b using normal object b : ");
+ printf ( "\n%s %s %d",b.name, b.author, b.callno ) ;
+ 
+ b1=&b ; //assign address of variable b to pointer variable b1 of same struct book type
+ printf("\n\nDisplaying struct book object b using pointer object b1 : ");
+ printf ( "\n%s %s %d",b1->name, b1->author, b1->callno ) ;
+ return 0;
+}
