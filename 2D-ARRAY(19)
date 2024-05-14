@@ -1,4 +1,4 @@
-//Program to create a transpose  of a matrix
+//Program to find max element of a matrix
 #include <stdio.h>
 
 int main() {
